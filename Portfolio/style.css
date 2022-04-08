@@ -1,0 +1,43 @@
+body {
+  background-image: url(drew-beamer-kUHfMW8awpE-unsplash.jpg);
+}
+h1 { 
+  border: 1px solid black;
+  text-align: center;
+  font-size: 100px;
+  background-image: url(background.jpg);
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  font-size: 75px;
+  
+}
+
+.Section_1 {
+  border: 1px solid black;
+  width: 100%;
+
+}
+
+.image {
+  border: 1px solid black;
+  height: 700px;
+  width: 100%;
+  
+  
+  
+}
+
+table {
+  border: 1px solid black;
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+table, th {
+  font-size: 25px;
+}
+
