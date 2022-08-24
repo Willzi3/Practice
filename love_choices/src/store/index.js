@@ -32,6 +32,7 @@ export default createStore({
       });
 
       let data = await res.json()
+      console.log(data)
 
       if(data.token){
         context.commit('setToken', data.token)
@@ -45,7 +46,7 @@ export default createStore({
           }
         }).then((res) => res.json()).then((data) => {
           context.commit('setUser', data.user)
-          router.push('/products')
+          router.push('/users')
         })
       }
       else {

@@ -2,8 +2,8 @@
   <div class="container">
     <form @submit.prevent="login">
       <h3>Log in to Scentsation</h3>
-      <input class="form-input" type="text" name="email" required v-model="email"/>
-      <input class="form-input" type="text" name="password" required v-model="password"/>
+      <input class="form-input" type="text" name="email" required v-model="email" placeholder="Email:" />
+      <input class="form-input" type="text" name="password" required v-model="password" placeholder="Password:" />
       <input class="form-btn" type="submit" value="Login" />
       <hr>
       <div class="form-extra">
@@ -36,6 +36,7 @@ export default {
     },
   },
 };
+
 </script>
 <style scoped>
 .container{

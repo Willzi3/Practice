@@ -19,6 +19,7 @@ export default {
   components: { UserCard },
   mounted() {
     this.$store.dispatch("getUsers");
+
   }
 };
 </script>
