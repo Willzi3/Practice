@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <form @submit.prevent="login">
-      <h3>Log in to Scentsation</h3>
+      <h3>Log in to Love Choices</h3>
       <input class="form-input" type="text" name="email" required v-model="email" placeholder="Email:" />
       <input class="form-input" type="text" name="password" required v-model="password" placeholder="Password:" />
       <input class="form-btn" type="submit" value="Login" />
@@ -93,7 +93,7 @@ h3{
   font-size: 1.4rem;
 }
 hr{
-  width: 90%;
+  width: 90%; 
   
 
 }

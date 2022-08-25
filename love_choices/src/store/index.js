@@ -5,6 +5,8 @@ export default createStore({
     user: null,
     users: null,
     token: null,
+    books: null,
+    book: null,
   },
   mutations: {
     setUser: (state, user) => {
@@ -60,15 +62,7 @@ export default createStore({
             full_name: payload.full_name,
             email: payload.email,
             password: payload.password,
-            phone: payload.phone,
-            user_type: "user",
-            birth_date: payload.birth_date,
-            gender: payload.gender,
-            marital_status: payload.marital_status,
-            occupation: payload.occupation,
-            address: payload.address,
-            description: payload.description,
-            image: payload.image
+            user_type: "user"
         }),
       headers: {
         "Content-type": "application/json",
