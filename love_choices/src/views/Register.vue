@@ -4,11 +4,14 @@
     <form @submit.prevent="register">
     <h3>Register</h3>
             <input class="form-input" type="text" name="full_name" required v-model="full_name" placeholder="Full Name"/>
-            <input class="form-input" type="text" name="user_type" required v-model="user_type" placeholder="User Type:"/>
             <input class="form-input" type="text" name="email" required v-model="email" placeholder="Email:"/>
             <input class="form-input" type="text" name="password" required v-model="password" placeholder="Password:"/>
+             <input class="user-type" type="text" name="user_type" required v-model="user_type"  readonly />
             <input class="form-btn" type="submit" value="Register" />
-           
+           <hr>
+           <div class="form-extra">
+            <router-link to="/">Already have an Account</router-link>
+           </div>
     </form>
 
     <div v-if="user">
@@ -28,7 +31,7 @@ export default {
       full_name: "",
       email: "",
       password: "",
-      user_type: "",
+      user_type: "user",
     };
   },
   methods: {
@@ -79,7 +82,7 @@ form{
   display: flex;
   gap: 10px;
 }
-.form-extra p {
+.form-extra  {
   width: 200px;
   border: none;
   border-radius: 5px;
@@ -113,7 +116,8 @@ h3{
 }
 hr{
   width: 90%;
-  
-
+}
+.user-type{
+  display: none;
 }
 </style>

@@ -48,7 +48,7 @@ export default createStore({
           }
         }).then((res) => res.json()).then((data) => {
           context.commit('setUser', data.user)
-          router.push('/users')
+          router.push('/profile', alert("Successfully Logged In:"))
         })
       }
       else {
@@ -70,6 +70,8 @@ export default createStore({
     })
       .then((response) => response.json())
       .then((data) => console.log(data));
+      router.push('/', alert("successfully registered"))
+
         },
     getUsers: async (context) => {
       fetch("https://love-choices-api.herokuapp.com/users")

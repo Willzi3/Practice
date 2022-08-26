@@ -3,15 +3,15 @@
     <form @submit.prevent="login">
       <h3>Log in to Love Choices</h3>
       <input class="form-input" type="text" name="email" required v-model="email" placeholder="Email:" />
-      <input class="form-input" type="text" name="password" required v-model="password" placeholder="Password:" />
+      <input class="form-input" type="password" name="password" required v-model="password" placeholder="Password:" />
       <input class="form-btn" type="submit" value="Login" />
       <hr>
       <div class="form-extra">
         <router-link to="/register"><p>Register</p></router-link>
         <router-link to="/reset"><p>Reset-Psw</p></router-link>
       </div>
+      <!-- <div class="welcome" v-if="user">Welcome {{ user.full_name }}</div> -->
     </form>
-    <div v-if="user">Welcome {{ user.full_name }}</div>
   </div>
 </template>
 <script>
@@ -40,7 +40,7 @@ export default {
 </script>
 <style scoped>
 .container{
-  height: 86vh;
+  height: 86.5vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,8 +52,8 @@ form{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 300px;
+  width: 20vw;
+  height: 50vh;
   gap: 10px;
   background: salmon;
 }
@@ -94,7 +94,14 @@ h3{
 }
 hr{
   width: 90%; 
-  
-
 }
+.welcome{
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 </style>
